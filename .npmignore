@@ -1,0 +1,16 @@
+coverage
+.idea
+.vscode
+node_modules
+*.ts
+!*.d.ts
+.gitignore
+test
+.travis.yml
+.github
+*.md
+!README.md
+tsconfig.json
+.prettierrc
+jest.config.js
+*.sh
