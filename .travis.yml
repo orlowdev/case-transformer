@@ -20,7 +20,7 @@ jobs:
     - stage: check
       script:
         - npm run style:check
-        - npm run test:cover
+        - npm run test
     - stage: cover
       script:
         - npm run test:cover
