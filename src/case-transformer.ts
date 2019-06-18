@@ -110,6 +110,10 @@ export class CaseTransformer {
     return this.input;
   }
 
+  /**
+   * Coerce current state of the input to a string. Useful in TypeScript
+   * realm to avoid disjunction (string | string[]).
+   */
   public toString(): string {
     return typeof this.input === 'string' ? this.input : this.input.join('');
   }
