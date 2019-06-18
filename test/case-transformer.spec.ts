@@ -7,7 +7,7 @@ import {
   toSnakeCase,
   toUpperSnakeCase,
   transformCase,
-} from '../';
+} from '../src';
 
 describe('CaseTransformer', () => {
   describe('transformCase', () => {
