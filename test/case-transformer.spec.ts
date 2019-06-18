@@ -1,13 +1,4 @@
-import {
-  toCamelCase,
-  toColonCase,
-  toDotCase,
-  toKebabCase,
-  toPascalCase,
-  toSnakeCase,
-  toUpperSnakeCase,
-  transformCase,
-} from '../src';
+import { transformCase } from '../src';
 
 describe('CaseTransformer', () => {
   describe('transformCase', () => {
