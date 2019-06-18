@@ -1,0 +1,52 @@
+{
+  "name": "@priestine/case-transformer",
+  "version": "0.0.0-dev",
+  "description": "Transform kebab back to camel. Or maybe make a kebab from Pascal.",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:cover": "rm -rf coverage && yarn test --coverage",
+    "test:watch": "npm run test -- --watch",
+    "style:check": "prettier --list-different src/**/*.ts src/*.ts",
+    "style:fix": "prettier --write src/**/*.ts src/*.ts",
+    "build:docs": "typedoc --out ./docs ./src --exclude '**/*.spec.ts' --ignoreCompilerErrors --mode file",
+    "build:ci": "tsc",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priestine/case-transformer.git"
+  },
+  "keywords": [
+    "string",
+    "case-transformation",
+    "string-manipulation",
+    "kebab",
+    "camel",
+    "snake",
+    "upper-snake",
+    "dot",
+    "colon",
+    "pascal"
+  ],
+  "author": "Sergei Orlov <priestine1.dev@gmail.com> (https://priestine.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/priestine/case-transformer/issues"
+  },
+  "homepage": "https://github.com/priestine/case-transformer#readme",
+  "devDependencies": {
+    "@types/jest": "24.0.15",
+    "jest": "24.8.0",
+    "prettier": "1.18.2",
+    "ts-jest": "24.0.2",
+    "typedoc": "0.14.2",
+    "typescript": "3.5.2"
+  }
+}
